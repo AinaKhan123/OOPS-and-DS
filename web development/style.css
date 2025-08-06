@@ -1,0 +1,112 @@
+body {
+    margin:0; 
+    padding:0;
+    background:#f0f2f5; 
+    color:#222;
+}
+#name {
+    font-size:50px;
+
+}
+
+header { 
+    background: navy; 
+    color: white; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+a {
+    color: white; 
+    margin: 0 8px; 
+    text-decoration: none; 
+    font-size:17px;
+    color: white;
+}
+
+section {
+    padding: 30px 15px; 
+    background: white; 
+    margin: 10px; 
+    border-radius:8px;
+}
+
+.about {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.about img {
+    width: 70px; 
+    height: auto;
+    border-radius: 10%;
+}
+
+.skills{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap:10px;
+    font-family: 'Poppins';
+}
+
+.skill {
+ background:#e2e8f0; 
+ padding:10px 15px; 
+ border-radius:5px;
+
+}
+
+.hobbies ul {
+    list-style: none;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap:20px;
+    font-family: 'Poppins';
+}
+
+.contact form {
+     display:flex;
+      flex-direction: column; 
+      gap:8px; 
+      max-width:320px;
+      font-family: 'Poppins';
+
+}
+
+input, textarea { 
+    padding:6px; 
+    border:1px solid #ccc; 
+    border-radius:4px; 
+    width:100%; 
+    flex: 1;
+    
+}
+
+button {
+  padding: 8px;
+  background-color: navy;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#nom {
+    font-size:30px;
+    font-family: 'Poppins';
+}
+#email{
+    font-size:15px;
+    font-family: 'Poppins';
+}
+
+#msg{
+    font-size:17px;
+    font-family: 'Poppins';
+
+}
+#name {
+    font-size:15px;
+    font-family: 'Poppins';
+}
