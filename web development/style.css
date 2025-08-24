@@ -1,112 +1,142 @@
-body {
-    margin:0; 
-    padding:0;
-    background:#f0f2f5; 
-    color:#222;
+* { 
+  box-sizing: border-box; 
 }
-#name {
-    font-size:50px;
-
-}
-
-header { 
-    background: navy; 
-    color: white; 
-    padding: 15px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
+:root{
+  --bg:#0e0625;
+  --surface:#2c303d;
+  --text:#dbdbdb;
+  --muted:#a9b1bd;
+  --brand:#e68900;
+  --brand-2:#e68900;
+  --border:#48494a;
+  --font-style: italic;
 }
 
-a {
-    color: white; 
-    margin: 0 8px; 
-    text-decoration: none; 
-    font-size:17px;
-    color: white;
+html,body{
+  height:100%;
+}
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.6;
+}
+a{
+  color:var(--text); 
+  text-decoration:none;
+}
+a:hover{
+  color:var(--brand);
+}
+.header{
+  background: var(--surface); 
+  border-bottom:1px solid var(--border);
+}
+.nav{
+  max-width:1100px; 
+  margin:0 auto; display:flex; 
+  justify-content:space-between;
+   padding:14px;
+  }
+.logo{
+  font-weight:bold;
+}
+.menu{
+  display:flex; 
+  gap:14px;
+}
+.menu a:hover{
+  color:var(--brand);
+}
+.container{
+  max-width:1100px; 
+  margin:auto; 
+  padding:20px;
+}
+.btn{
+  background:var(--brand); 
+  border:none; padding:10px 15px; 
+  border-radius:6px; 
+  cursor:pointer;
+  color:#111;
+}
+.btn:hover{
+  background:var(--brand-2);
+}
+.grid{
+  display:grid; 
+  gap:16px; 
+  grid-template-columns: repeat(3, 1fr);
+}
+.card{
+  background:var(--surface); 
+  border:1px solid var(--border); 
+  border-radius:8px; 
+  padding:14px;
+}
+.card img{
+  width:100%; 
+  border-radius:6px;}
+footer{
+  background:var(--surface); 
+  padding:14px; text-align:center; 
+  color:var(--muted); 
+  margin-top:20px;
 }
 
-section {
-    padding: 30px 15px; 
-    background: white; 
-    margin: 10px; 
-    border-radius:8px;
-}
+.cart-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    .cart-item img {
+      width: 100px;
+      border-radius: 8px;
+    }
+    .cart-details {
+      flex-grow: 1;
+    }
+    .cart-details h4 {
+      margin: 5px 0;
+    }
+    .cart-details input {
+      width: 60px;
+      text-align: center;
+    }
+    .price {
+      font-weight: bold;
+      color: green;
+    }
+    .remove-btn {
+      background-color: #3b4145;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .remove-btn:hover {
+      opacity: 0.85;
+    }
+    .grand-total {
+      text-align: right;
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #bababa;
+    }
 
-.about {
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 15px;
+.container h2 {
+  color: #a5a7a9;
+  text-align: center;
+  margin-top: 50px;
 }
-
-.about img {
-    width: 70px; 
-    height: auto;
-    border-radius: 10%;
-}
-
-.skills{
-    display: flex; 
-    flex-wrap: wrap; 
-    gap:10px;
-    font-family: 'Poppins';
-}
-
-.skill {
- background:#e2e8f0; 
- padding:10px 15px; 
- border-radius:5px;
-
-}
-
-.hobbies ul {
-    list-style: none;
-    display: flex; 
-    flex-wrap: wrap; 
-    gap:20px;
-    font-family: 'Poppins';
-}
-
-.contact form {
-     display:flex;
-      flex-direction: column; 
-      gap:8px; 
-      max-width:320px;
-      font-family: 'Poppins';
-
-}
-
-input, textarea { 
-    padding:6px; 
-    border:1px solid #ccc; 
-    border-radius:4px; 
-    width:100%; 
-    flex: 1;
-    
-}
-
-button {
-  padding: 8px;
-  background-color: navy;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-#nom {
-    font-size:30px;
-    font-family: 'Poppins';
-}
-#email{
-    font-size:15px;
-    font-family: 'Poppins';
-}
-
-#msg{
-    font-size:17px;
-    font-family: 'Poppins';
-
-}
-#name {
-    font-size:15px;
-    font-family: 'Poppins';
-}
+.container p {
+  text-align: center;
+  font-size: px;
+  color: #cfcece;
