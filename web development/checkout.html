@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <div class="logo">MyShop</div>
+    <nav class="menu">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h2>Checkout</h2>
+  <form>
+    <p><input type="text" placeholder="Full Name" class="input" required></p>
+    <p><input type="email" placeholder="Email" class="input"required></p>
+    <p><input type="text" placeholder="Phone Number" class="input"required></p>
+    <p><input type="text" placeholder="Address" class="input"required></p>
+    <p>
+      <select class="input" required>
+        <option>Credit/Debit Card</option>
+        <option>Cash on Delivery</option>
+      </select>
+    </p>
+    <p><button class="btn">Place Order</button></p>
+  </form>
+</div>
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent actual form submission
+    document.querySelector(".container").innerHTML = "<h2>Thank you for your order! 😊</h2><p>We’ll be in touch soon.</p>";
+  });
+</script>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+
+<footer>© 2025 MyShop</footer>
+</body>
+</html>

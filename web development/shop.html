@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop - MyShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <div class="logo">MyShop</div>
+    <nav class="menu">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h2>All Products</h2>
+  <div class="grid">
+
+
+    <div class="card">
+      <h3>Smartphone</h3>
+      <img src="istockphoto-1315891458-612x612.jpg" width="300">
+      <p><b>Price:</b> $499</p>
+      <p>High performance smartphone with latest features.</p>
+      <button class="btn" onclick="addToCart('Smartphone', 499, 'istockphoto-1315891458-612x612.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Camera</h3>
+      <img src="camera.jpeg" width="300">
+      <p><b>Price:</b> $59.99</p>
+      <p>HD camera with zoom and clear picture quality.</p>
+      <button class="btn" onclick="addToCart('Camera', 59.99, 'camera.jpeg')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Watches</h3>
+      <img src="watch.jpeg" width="300">
+      <p><b>Price:</b> $59.99</p>
+      <p>Stylish wrist watch with modern design.</p>
+      <br>
+      <button class="btn" onclick="addToCart('Watch', 59.99, 'watch.jpeg')">Add to Cart</button>
+    </div>
+
+
+    <div class="card">
+      <h3>Headphones</h3>
+      <img src="Earbuds.jpeg" width="300">
+      <p><b>Price:</b> $59.99</p>
+      <p>Wired headphones with high quality sound and Comfortable design.</p>
+      <br>
+      <button class="btn" onclick="addToCart('Earbuds', 59.99, 'Earbuds.jpeg')">Add to Cart</button>
+    </div>
+
+
+    <div class="card">
+      <h3>Gamepad</h3>
+      <img src="a.jpeg" width="300" height="230">
+      <p><b>Price:</b> $59.99</p>
+      <p>Ergonomic gamepad for smooth gaming experience.</p>
+      <br>
+      <button class="btn" onclick="addToCart('Gamepad', 59.99, 'a.jpeg')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>Laptop</h3>
+      <img src="lp.jpeg" width="300" height="230">
+      <p><b>Price:</b> $59.99</p>
+      <p>Premium performance laptop with long-lasting battery and seamless multitasking.</p>
+      <br>
+      <button class="btn" onclick="addToCart('Laptop ', 59.99, 'lp.jpeg')">Add to Cart</button> 
+    </div>
+
+    <div class="card">
+      <h3>Wireless Earbuds</h3>
+      <img src="we.jpeg" width="300">
+      <p><b>Price:</b> $59.99</p>
+      <p>Comfortable fit wireless earbuds with clear sound.</p>
+      <button class="btn" onclick="addToCart('Wireless Earbuds', 59.99, 'we.jpeg')">Add to Cart</button>
+    </div>
+   
+    <div class="card">
+      <h3>Wall Clock</h3>
+      <img src="clock.jpeg" width="300">
+      <p><b>Price:</b> $59.99</p>
+      <p>Elegant wall clock for home and office decor.</p>
+      <button class="btn" onclick="addToCart('Wall Clock', 59.99, 'clock.jpeg')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3> Laptop Bag</h3>
+      <img src="bag.jpeg" width="300">
+      <p><b>Price:</b> $59.99</p>
+      <p>Durable laptop bag with stylish design.</p>
+      <br>
+      <button class="btn" onclick="addToCart('Laptop Bag', 59.99, 'bag.jpeg')">Add to Cart</button>
+      
+    </div>
+
+  </div>
+</div>
+
+<footer>© 2025 MyShop</footer>
+
+<script>
+  function addToCart(name, price, img) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ name, price, img, quantity: 1 });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " added to cart!");
+  }
+</script>
+</body>
+</html>
